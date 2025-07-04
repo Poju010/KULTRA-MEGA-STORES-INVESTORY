@@ -106,7 +106,7 @@ GROUP BY
 ORDER BY 
     [Total Sales] ASC;
 ```
-- **Explanation:** This query identifies the 10 customers with the lowest total sales, pinpointing who the "bottom 10 customers" are. They were Jeremy Farry, Natalie DeCherney, Nicole Fjeld, Katrina Edelman, Dorothy Dickinson, Christine Kargatis, Eric Murdock, Chris McAfee, Rick Huthwaite and Mark Hamilton
+- **EXPLANATION:** This query identifies the 10 customers with the lowest total sales, pinpointing who the "bottom 10 customers" are. They were Jeremy Farry, Natalie DeCherney, Nicole Fjeld, Katrina Edelman, Dorothy Dickinson, Christine Kargatis, Eric Murdock, Chris McAfee, Rick Huthwaite and Mark Hamilton
 - **Advice for Management:** To increase revenue from the bottom 10 customers, KMS management should focus on a targeted customer retention and engagement strategy.  
 ```
 ---(Q5) KMS incurred the most shipping cost using which shipping method?
@@ -120,7 +120,7 @@ GROUP BY
 ORDER BY 
     Total_Shipping_Cost DESC;
 ```
-- **Explanation:** This query identifies which shipping method has led to the highest overall shipping costs for KMS which is "Delivery Truck" with the total shipping cost of ₦51,971.94
+- **EXPLANATION:** This query identifies which shipping method has led to the highest overall shipping costs for KMS which is "Delivery Truck" with the total shipping cost of ₦51,971.94
 
 **Case Scenario II**
 ```
@@ -158,7 +158,7 @@ GROUP BY
 ORDER BY
     sd.Customer_Name, NumberOfPurchases DESC;
 ```
-- **Explanation:** This query identifies the top 10 customers who generated the highest total profit for KMS, along with their customer segment. They are:  
+- **EXPLANATION:** This query identifies the top 10 customers who generated the highest total profit for KMS, along with their customer segment. They are:  
 -- Emily Phan (Consumer): Profit ₦32,696.49, Sales ₦103,652.49  
 -- Grant Carroll (Small Business): Profit ₦20,329.00, Sales ₦45,000.25  
 -- Raymond Book (Consumer): Profit ₦18,477.07, Sales ₦51,954.52  
@@ -189,7 +189,7 @@ GROUP BY
 ORDER BY
     TotalSales DESC;
 ```
-- **Explanation:** This query identifies the individual customer within the 'Small Business' segment who generated the highest total sales. In person of "Dennis Kane" with total sales of ₦75,967.60.
+- **EXPLANATION:** This query identifies the individual customer within the 'Small Business' segment who generated the highest total sales. In person of "Dennis Kane" with total sales of ₦75,967.60.
 ```
 --- (Q8) Which Corporate Customer placed the most number of orders in 2009 – 2012? 
 SELECT TOP 1
@@ -205,7 +205,7 @@ GROUP BY
 ORDER BY 
     [Number Of Orders] DESC;
 ```
-- **Explanation:** "Adam Hart" was the corporate customer that placed the most number of orders with 27 number of orders in 2009-2012.
+- **EXPLANATION:** "Adam Hart" was the corporate customer that placed the most number of orders with 27 number of orders in 2009-2012.
 ```
 --- (Q9) Which consumer customer was the most profitable one?
 SELECT TOP 1 
@@ -221,7 +221,7 @@ GROUP BY
 ORDER BY 
     TotalProfit DESC;
 ```
-- **Explanation:** "Emily Phan" was the most profitable consumer customer with the total profit of ₦34,005.44
+- **EXPLANATION:** "Emily Phan" was the most profitable consumer customer with the total profit of ₦34,005.44
 ```
 --- (Q10) Which customer returned items, and what segment do they belong to? 
 SELECT 
@@ -235,7 +235,7 @@ JOIN
 WHERE
     os.[Status] = 'Returned';
 ```
-- **Explanation:** The top 10 customers who returned items, along with their segments, are:     
+- **EXPLANATION:** The top 10 customers who returned items, along with their segments, are:     
 -- Tamara Dahlen (Corporate)  
 -- Jonathan Doherty (Corporate)  
 -- Michael Dominguez (Home Office)  
