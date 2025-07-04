@@ -33,6 +33,12 @@ __Case Scenario II__: Customer Behavior & Profitability
   
 By answering these questions, the project aims to provide actionable recommendations for improving sales strategies, optimizing shipping logistics, and enhancing customer relationships for KMS.
 
+## Technologies Used
+This project primarily leverages the following technologies for data analysis and management:
+- SQL (Structured Query Language): The core language used for data extraction, transformation, and analysis.
+- SQL Server: The relational database management system (RDBMS) used to store and query the datasets.
+- SQL Server Management Studio (SSMS): The integrated environment used for managing SQL Server databases, writing queries, and facilitating data import.
+
 ## Analysis and Key Findings  
 **Case Scenario I**
 ```
@@ -46,8 +52,8 @@ GROUP BY
     product_category
 ORDER BY 
     [Total Sales] DESC;
-```
-
+```  
+- **EXPLANATION:** The query above identifies the product category that generated the most sales. The product category, `Technology` has the highest sales of ₦5,984,248.18
 ```
 ---(Q2) What are Top 3 and Bottom 3 regions in terms of sales?
 ---TOP 3
@@ -72,7 +78,7 @@ GROUP BY
 ORDER BY 
     [Total Sales] ASC;
 ```
-
+- **EXPLANATION:**  These queries identify regions with the highest and lowest sales performance. The Top 3 regions with their total sales are West(₦3,597,549.27), Ontario(₦3,063,212.48) and Prairie(₦2,837,304.61) while the bottom 3 regions with their total sales are Nunavut(₦116,376.48), Northwest Territories(₦800,847.33) and Yukon (₦975,867.38) respectively.  
 ```
 ---(Q3) What were the total sales of appliances in Ontario?
 SELECT  
@@ -87,7 +93,7 @@ GROUP BY
     Province, 
     Product_Sub_Category;
 ```
-
+- **EXPLANATION:** The total sales of Appliances in Ontario was ₦202,346.84
 ```
 ---(Q4) Advise the management of KMS on what to do to increase the revenue from the bottom 10 customer
 SELECT TOP 10 
@@ -100,10 +106,11 @@ GROUP BY
 ORDER BY 
     [Total Sales] ASC;
 ```
-
+- **Explanation:** This query identifies the 10 customers with the lowest total sales, pinpointing who the "bottom 10 customers" are. They are Jeremy Farry, Natalie DeCherney, Nicole Fjeld, Katrina Edelman, Dorothy Dickinson, Christine Kargatis, Eric Murdock, Chris McAfee, Rick Huthwaite and Mark Hamilton
+- **Advice for Management:** To increase revenue from the bottom 10 customers, KMS management should focus on a targeted customer retention and engagement strategy.  
 ```
 ---(Q5) KMS incurred the most shipping cost using which shipping method?
-SELECT 
+SELECT TOP 1
     Ship_Mode, 
     sum(Shipping_Cost) AS Total_Shipping_Cost
 FROM 
@@ -113,6 +120,7 @@ GROUP BY
 ORDER BY 
     Total_Shipping_Cost DESC;
 ```
+- **Explanation:** This query identifies which shipping method has led to the highest overall shipping costs for KMS which is "Delivery Truck" with the totak shipping cost of ₦51,971.94
 
 **Case Scenario II**
 ```
@@ -167,7 +175,7 @@ GROUP BY
 ORDER BY
     TotalSales DESC;
 ```
-
+- **Explanation:** ₦
 ```
 --- (Q8) Which Corporate Customer placed the most number of orders in 2009 – 2012? 
 SELECT TOP 1
