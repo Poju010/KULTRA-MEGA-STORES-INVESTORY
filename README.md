@@ -235,7 +235,15 @@ JOIN
 WHERE
     os.[Status] = 'Returned';
 ```
-
+- **Explanation:** The top 10 customers who returned items, along with their segments, are:     
+-- Tamara Dahlen (Corporate)  
+-- Jonathan Doherty (Corporate)  
+-- Michael Dominguez (Home Office)  
+-- Anne Pryor (Consumer)  
+-- Erin Creighton (Corporate)  
+-- Frank Gastineau (Small Business)  
+-- Cari Sayre (Corporate)  
+-- Sheri Gordon (Corporate)  
 ```
 --- (Q11) If the delivery truck is the most economical but the slowest shipping method and Express Air is the fastest but the most expensive one, do you think the company appropriately spent shipping costs based on the Order Priority? Explain your answer 
 SELECT 
@@ -253,5 +261,25 @@ GROUP BY
 ORDER BY 
     Ship_Mode,
     Order_Priority;
-```
+```  
+- **Summary of Findings:**
+  - Delivery Truck, described as most economical, shows the highest average cost per order (around ₦43-₦47). It handles a moderate number of orders across all priorities.
+  - Express Air, described as most expensive, surprisingly has the lowest average cost per order (around ₦7-₦9). It handles the fewest orders but serves critical and high priorities.
+  - Regular Air handles the majority of orders at a mid-range average cost (around ₦7-₦8).
+  
+- **Conclusion/Explanation:**  
+Based on the average cost per order, KMS's spending patterns are not entirely appropriate when compared to the stated descriptions.
+  - The 'Delivery Truck' being the "most economical" is contradicted by its high average cost per order. This suggests potential inefficiency or a specific context not captured by this metric, it might be economical for large bulk shipments, but not for individual orders within those shipments.
+  - Conversely, 'Express Air', despite being "most expensive," is the cheapest per order, which is counter-intuitive. If truly expensive overall, this might indicate it's only used for very light, high-priority parcels, making its per-order average low.
+Therefore, while KMS does use faster modes for critical orders, a deeper look into the actual cost drivers beyond just Shipping Cost per order is needed to confirm "appropriate" spending.
 
+## **Conclusion and Overall Recommendations**
+This SQL analysis of KMS sales data from 2009-2012 provides key insights for the Abuja division's Business Manager.  
+- **Enhance Customer Value:**  
+  - Prioritize Top Customers: Implement loyalty programs and personalized offers for highly profitable customers (e.g., Emily Phan, Grant Carroll).  
+  - Re-engage Bottom Customers: Actively reach out to low-revenue customers (e.g., Jeremy Farry) with targeted incentives.  
+  - Address Returns: Investigate reasons for returns from customers like Tamara Dahlen to improve satisfaction and reduce losses.  
+- **Optimize Logistics Spending:** 
+  - Review 'Delivery Truck' Costs: Investigate why 'Delivery Truck' shows the highest average cost per order, despite being labeled "economical." This may indicate inefficiencies or a need for better cost capture.  
+  - Leverage 'Express Air': Explore greater use of 'Express Air' for urgent shipments, as it surprisingly has the lowest average cost per order.  
+  - Maintain 'Regular Air': Continue relying on 'Regular Air' for its balanced cost and efficiency across most orders.
