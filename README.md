@@ -215,9 +215,7 @@ WHERE
 ```
 
 ```
---- (Q11) If the delivery truck is the most economical but the slowest shipping method and 
---- Express Air is the fastest but the most expensive one, do you think the company appropriately 
---- spent shipping costs based on the Order Priority? Explain your answer 
+--- (Q11) If the delivery truck is the most economical but the slowest shipping method and Express Air is the fastest but the most expensive one, do you think the company appropriately spent shipping costs based on the Order Priority? Explain your answer 
 SELECT 
     Ship_Mode,
     Order_Priority,
