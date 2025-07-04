@@ -53,7 +53,7 @@ GROUP BY
 ORDER BY 
     [Total Sales] DESC;
 ```  
-- **EXPLANATION:** The query above identifies the product category that generated the most sales. The product category, `Technology` has the highest sales of ₦5,984,248.18
+- **EXPLANATION:** The query above identifies the product category that generated the most sales. The product category, `Technology` had the highest sales of ₦5,984,248.18
 ```
 ---(Q2) What are Top 3 and Bottom 3 regions in terms of sales?
 ---TOP 3
@@ -78,7 +78,7 @@ GROUP BY
 ORDER BY 
     [Total Sales] ASC;
 ```
-- **EXPLANATION:**  These queries identify regions with the highest and lowest sales performance. The Top 3 regions with their total sales are West(₦3,597,549.27), Ontario(₦3,063,212.48) and Prairie(₦2,837,304.61) while the bottom 3 regions with their total sales are Nunavut(₦116,376.48), Northwest Territories(₦800,847.33) and Yukon (₦975,867.38) respectively.  
+- **EXPLANATION:**  These queries identify regions with the highest and lowest sales performance. The Top 3 regions with their total sales were West(₦3,597,549.27), Ontario(₦3,063,212.48) and Prairie(₦2,837,304.61) while the bottom 3 regions with their total sales were Nunavut(₦116,376.48), Northwest Territories(₦800,847.33) and Yukon (₦975,867.38) respectively.  
 ```
 ---(Q3) What were the total sales of appliances in Ontario?
 SELECT  
@@ -106,7 +106,7 @@ GROUP BY
 ORDER BY 
     [Total Sales] ASC;
 ```
-- **Explanation:** This query identifies the 10 customers with the lowest total sales, pinpointing who the "bottom 10 customers" are. They are Jeremy Farry, Natalie DeCherney, Nicole Fjeld, Katrina Edelman, Dorothy Dickinson, Christine Kargatis, Eric Murdock, Chris McAfee, Rick Huthwaite and Mark Hamilton
+- **Explanation:** This query identifies the 10 customers with the lowest total sales, pinpointing who the "bottom 10 customers" are. They were Jeremy Farry, Natalie DeCherney, Nicole Fjeld, Katrina Edelman, Dorothy Dickinson, Christine Kargatis, Eric Murdock, Chris McAfee, Rick Huthwaite and Mark Hamilton
 - **Advice for Management:** To increase revenue from the bottom 10 customers, KMS management should focus on a targeted customer retention and engagement strategy.  
 ```
 ---(Q5) KMS incurred the most shipping cost using which shipping method?
@@ -120,7 +120,7 @@ GROUP BY
 ORDER BY 
     Total_Shipping_Cost DESC;
 ```
-- **Explanation:** This query identifies which shipping method has led to the highest overall shipping costs for KMS which is "Delivery Truck" with the totak shipping cost of ₦51,971.94
+- **Explanation:** This query identifies which shipping method has led to the highest overall shipping costs for KMS which is "Delivery Truck" with the total shipping cost of ₦51,971.94
 
 **Case Scenario II**
 ```
@@ -175,7 +175,7 @@ GROUP BY
 ORDER BY
     TotalSales DESC;
 ```
-- **Explanation:** ₦
+- **Explanation:** This query identifies the individual customer within the 'Small Business' segment who generated the highest total sales. In person of "Dennis Kane" with total sales of ₦75,967.60.
 ```
 --- (Q8) Which Corporate Customer placed the most number of orders in 2009 – 2012? 
 SELECT TOP 1
@@ -191,7 +191,7 @@ GROUP BY
 ORDER BY 
     [Number Of Orders] DESC;
 ```
-
+- **Explanation:** "Adam Hart" was the corporate customer that placed the most number of orders with 27 number of orders in 2009-2012.
 ```
 --- (Q9) Which consumer customer was the most profitable one?
 SELECT TOP 1 
@@ -207,7 +207,7 @@ GROUP BY
 ORDER BY 
     TotalProfit DESC;
 ```
-
+- **Explanation:** "Emily Phan" was the most profitable consumer customer with the total profit of ₦34,005.44
 ```
 --- (Q10) Which customer returned items, and what segment do they belong to? 
 SELECT 
