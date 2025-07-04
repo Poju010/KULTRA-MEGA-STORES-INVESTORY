@@ -158,7 +158,21 @@ GROUP BY
 ORDER BY
     sd.Customer_Name, NumberOfPurchases DESC;
 ```
-
+- **Explanation:** This query identifies the top 10 customers who generated the highest total profit for KMS, along with their customer segment. They are:  
+-- Emily Phan (Consumer): Profit ₦32,696.49, Sales ₦103,652.49  
+-- Grant Carroll (Small Business): Profit ₦20,329.00, Sales ₦45,000.25  
+-- Raymond Book (Consumer): Profit ₦18,477.07, Sales ₦51,954.52  
+-- Clytie Kelty (Small Business): Profit ₦15,886.93, Sales ₦44,344.40  
+-- Andy Reiter (Corporate): Profit ₦14,440.39, Sales ₦28,359.40  
+-- Deborah Brumfield (Small Business): Profit ₦13,340.26, Sales ₦28,664.52  
+-- Karen Carlisle (Corporate): Profit ₦12,748.86, Sales ₦29,884.60  
+-- Rick Wilson (Consumer): Profit ₦12,606.81, Sales ₦26,095.13  
+-- Logan Haushalter (Corporate): Profit ₦11,630.15, Sales ₦27,820.34  
+-- Nick Crebassa (Corporate): Profit ₦11,562.08, Sales ₦29,186.49  
+- **Analysis of the purchase history for these most profitable customers reveals a strong preference for:**  
+-- **Technology:** Particularly high-value items like 'Office Machines' and 'Copiers and Fax', alongside frequent purchases of 'Telephones and Communication' and 'Computer Peripherals'.  
+-- **Office Supplies:** Frequent, recurring purchases of essentials like 'Paper' and 'Binders and Binder Accessories', with 'Appliances' also being a notable sub-category for several customers.  
+-- **Furniture:** While less frequent, purchases of 'Chairs & Chairmats', 'Bookcases', and 'Office Furnishings' contribute significantly to sales value from these customers.
 ```
 --- (Q7) Which small business customer had the highest sales? 
 SELECT top 1
